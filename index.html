@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagner Paz - Psicólogo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a3a52',
+                        secondary: '#e8dcc8',
+                        accent: '#c9a961',
+                        background: '#f5f1e8',
+                        foreground: '#1a3a52',
+                        muted: '#f9f7f3'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Calibri', 'Segoe UI', sans-serif; background-color: #f5f1e8; color: #1a3a52; }
+    </style>
+</head>
+<body class="min-h-screen bg-[#f5f1e8]">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#f5f1e8] border-b border-[#e8dcc8]">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-bold tracking-wider text-[#1a3a52]">WAGNER PAZ</span>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#sobre" class="text-[#1a3a52] hover:text-[#c9a961] font-medium transition-colors">Sobre</a>
+                <a href="#servicos" class="text-[#1a3a52] hover:text-[#c9a961] font-medium transition-colors">Serviços</a>
+                <a href="#metodo" class="text-[#1a3a52] hover:text-[#c9a961] font-medium transition-colors">Método</a>
+                <a href="#faq" class="text-[#1a3a52] hover:text-[#c9a961] font-medium transition-colors">FAQ</a>
+                <a href="#contato" class="text-[#1a3a52] hover:text-[#c9a961] font-medium transition-colors">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-r from-[#f5f1e8] via-[#e8dcc8]/40 to-[#f5f1e8] py-20 md:py-28 border-b border-[#e8dcc8]">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-[#1a3a52] leading-tight">
+                        Você não precisa carregar o peso de todas as escolhas sozinho.
+                    </h1>
+                    <p class="text-lg text-[#1a3a52]/90 leading-relaxed max-w-lg">
+                        Psicoterapia e Orientação de Carreira para jovens e adultos. Um espaço de escuta genuína, horizontal e seguro, focado em resgatar a sua autonomia diante da ansiedade e do esgotamento diário.
+                    </p>
+                    <div class="pt-4">
+                        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#1a3a52] text-white font-bold px-8 py-4 rounded-lg shadow-md hover:bg-[#1a3a52]/90 transition-all text-center w-full sm:w-auto">
+                            Agendar Sessão
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-[#1a3a52]/70 pt-2">
+                        <span>◆ Atendimento Online</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center">
+                    <div class="w-80 h-80 rounded-full border-4 border-[#c9a961] bg-[#1a3a52] flex items-center justify-center shadow-xl">
+                        <span class="text-white text-7xl font-light">Ψ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Point Section -->
+    <section class="py-16 bg-[#f9f7f3]">
+        <div class="container mx-auto px-4 max-w-3xl text-center space-y-6">
+            <h2 class="text-3xl font-bold text-[#1a3a52]">É comum sentir que algo saiu dos trilhos</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mx-auto"></div>
+            <p class="text-lg text-[#1a3a52]/80 leading-relaxed">
+                Se você está carregando tristeza, melancolia, insegurança e sentimentos de depressão que parecem não ter saída, ou ainda lidando com ansiedade constante e sensação de burnout no trabalho, saiba que essa dor é válida e merece ser acolhida. Conflitos nas relações e paralisia na hora de tomar decisões também fazem parte dessa jornada. Existe um caminho possível para reorganizar essa rota com mais leveza e clareza.
+            </p>
+            <p class="text-base text-[#1a3a52]/70 italic">Você não está sozinho nessa jornada.</p>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-[#f5f1e8]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#1a3a52] text-center mb-4">Como Trabalhamos Juntos</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-[#e8dcc8]/60 hover:shadow-md transition-shadow">
+                    <h3 class="text-2xl font-bold text-[#1a3a52] mb-4 flex items-center gap-2">
+                        <span class="text-[#c9a961]">◆</span> Psicoterapia Clínica
+                    </h3>
+                    <p class="text-[#1a3a52]/80 leading-relaxed mb-6">
+                        Trabalho colaborativo focado em compreender sua história e contexto. Juntos, exploramos as raízes de ansiedade, estresse e conflitos, desenvolvendo estratégias práticas para retomar a sua autonomia e bem-estar em diferentes fases da vida.
+                    </p>
+                    <ul class="space-y-2 text-sm text-[#1a3a52]/70">
+                        <li class="flex items-start gap-2"><span>•</span> Ansiedade e depressão: compreender e reorganizar</li>
+                        <li class="flex items-start gap-2"><span>•</span> Estresse crônico e esgotamento: recuperar energia e equilíbrio</li>
+                        <li class="flex items-start gap-2"><span>•</span> Transições de vida e crises: ressignificar e seguir adiante</li>
+                        <li class="flex items-start gap-2"><span>•</span> Conflitos relacionais e pessoais: compreender padrões e transformar relações</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm border border-[#e8dcc8]/60 hover:shadow-md transition-shadow">
+                    <h3 class="text-2xl font-bold text-[#1a3a52] mb-4 flex items-center gap-2">
+                        <span class="text-[#c9a961]">◆</span> Orientação Profissional
+                    </h3>
+                    <p class="text-[#1a3a52]/80 leading-relaxed mb-6">
+                        Suporte estruturado para decisões sobre carreira. Entendo que a escolha profissional não é apenas sobre um cargo ou função, mas sobre construir uma trajetória alinhada com sua identidade, bem-estar and objetivos. Auxilio em escolhas, transições e adaptações acadêmicas e profissionais.
+                    </p>
+                    <ul class="space-y-2 text-sm text-[#1a3a52]/70">
+                        <li class="flex items-start gap-2"><span>•</span> Escolha de curso e profissão</li>
+                        <li class="flex items-start gap-2"><span>•</span> Transições profissionais</li>
+                        <li class="flex items-start gap-2"><span>•</span> Adaptação acadêmica e profissional</li>
+                        <li class="flex items-start gap-2"><span>•</span> Planejamento de carreira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section id="metodo" class="py-20 bg-[#e8dcc8]/20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-[#1a3a52] mb-4">Como Funciona Nosso Trabalho</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-[#1a3a52]/80 leading-relaxed">
+                        Acredito em um modelo de terapia <span class="font-semibold text-[#1a3a52]">horizontal</span>. Aqui, não há julgamentos ou rótulos. Trabalhamos em parceria: unindo o meu conhecimento clínico com a sua vivência prática.
+                    </p>
+                    <p class="text-lg text-[#1a3a52]/80 leading-relaxed">
+                        Juntos, vamos construir ferramentas para que você consiga compreender a si mesmo, lidar com as pressões institucionais e sociais, e retomar o controle da sua história.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex gap-4">
+                          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#c9a961] text-white flex items-center justify-center font-bold text-sm">1</div>
+                          <div>
+                            <h4 class="font-bold text-[#1a3a52] mb-1">Escuta Empática</h4>
+                            <p class="text-sm text-[#1a3a52]/70">Escuto sua história e sua vivência sem julgamentos, reconhecendo o que você traz como válido</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4">
+                          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#c9a961] text-white flex items-center justify-center font-bold text-sm">2</div>
+                          <div>
+                            <h4 class="font-bold text-[#1a3a52] mb-1">Análise Colaborativa</h4>
+                            <p class="text-sm text-[#1a3a52]/70">Mapeamos juntos os padrões, as dificuldades e as possibilidades que emergem da sua experiência</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-4">
+                          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#c9a961] text-white flex items-center justify-center font-bold text-sm">3</div>
+                          <div>
+                            <h4 class="font-bold text-[#1a3a52] mb-1">Construção de Ferramentas</h4>
+                            <p class="text-sm text-[#1a3a52]/70">Desenvolvemos estratégias práticas e sustentáveis que funcionam na sua vida real, aqui e agora</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full h-80 bg-[#1a3a52]/10 rounded-2xl border border-[#e8dcc8] flex items-center justify-center text-[#c9a961] text-lg font-medium p-6 text-center italic">
+                        "Unindo conhecimento clínico com a sua vivência prática."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terapia Colaborativa Section -->
+    <section class="py-20 bg-[#e8dcc8]/5">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-[#1a3a52] text-center mb-4">Terapia Colaborativa</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mx-auto mb-12"></div>
+            
+            <div class="space-y-12">
+                <div class="text-center max-w-2xl mx-auto">
+                    <p class="text-lg text-[#1a3a52]/80 leading-relaxed">
+                        Meu trabalho é fundamentado na <span class="font-semibold text-[#1a3a52]">Terapia Colaborativa</span>, uma abordagem que reconhece você como o maior especialista na sua própria vida. Aqui, não há fórmulas prontas ou diagnósticos que definem quem você é.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 border border-[#e8dcc8] hover:border-[#c9a961] transition-colors">
+                        <h3 class="font-bold text-[#1a3a52] text-lg mb-2 flex items-center gap-2"><span class="text-[#c9a961]">1</span> Parceria</h3>
+                        <p class="text-sm text-[#1a3a52]/70 leading-relaxed">Trabalho lado a lado com você, não como um dita verdade. Você é o especialista; juntos organizamos sua vida.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 border border-[#e8dcc8] hover:border-[#c9a961] transition-colors">
+                        <h3 class="font-bold text-[#1a3a52] text-lg mb-2 flex items-center gap-2"><span class="text-[#c9a961]">2</span> Curiosidade</h3>
+                        <p class="text-sm text-[#1a3a52]/70 leading-relaxed">Abertura genuína, sem julgamentos prévios. Busco entender o mundo a partir da sua perspectiva.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 border border-[#e8dcc8] hover:border-[#c9a961] transition-colors">
+                        <h3 class="font-bold text-[#1a3a52] text-lg mb-2 flex items-center gap-2"><span class="text-[#c9a961]">3</span> Diálogo</h3>
+                        <p class="text-sm text-[#1a3a52]/70 leading-relaxed">Mudança por conversas intencionais. Investigamos o sofrimento e construímos caminhos.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 border border-[#e8dcc8]">
+                    <h3 class="font-bold text-[#1a3a52] text-lg mb-4">Como Funciona na Prática</h3>
+                    <p class="text-[#1a3a52]/70 leading-relaxed mb-4">
+                        O processo terapêutico é uma <span class="font-semibold">conversa intencional</span> onde ambos trazemos nossas contribuições. Você compartilha sua vivência, suas dificuldades e o que você sente. Eu escuto com atenção, ajudo a identificar padrões e faço perguntas que abrem novas perspectivas.
+                    </p>
+                    <p class="text-[#1a3a52]/70 leading-relaxed">
+                        Juntos, pegamos aquela demanda que está confusa, pesada ou travada no seu dia a dia e a reorganizamos. Não existem receitas prontas. Juntos, construímos estratégias reais e aplicáveis que fazem sentido para você, aqui e agora.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-[#1a3a52] mb-4">Sobre Mim</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mb-12"></div>
+            <div class="space-y-6 text-[#1a3a52]/80 leading-relaxed">
+                <p>
+                    Sou Psicólogo graduado pela Universidade de São Paulo (USP), com Bacharelado e Licenciatura. Minha trajetória profissional é marcada pelo compromisso com uma psicologia que entende o ser humano para além dos diagnósticos, focando em como nossas histórias e os contextos em que vivemos moldam quem somos.
+                </p>
+                <p>
+                    Atuo em duas frentes que se complementam: o acolhimento do sofrimento emocional e o suporte estratégico para as trajetórias de carreira.
+                </p>
+                <div class="bg-[#e8dcc8]/20 border-l-4 border-[#c9a961] p-6 rounded-lg my-6">
+                    <h4 class="font-bold text-[#1a3a52] mb-2">No Consultório</h4>
+                    <p class="text-sm">Meu trabalho é oferecer um suporte seguro e acolhedor para que você consiga enfrentar as pressões que o dia a dia nos impõe. Tenho experiência no manejo clínico de quadros de depressão, ansiedade e exaustão emocional, e compreendo profundamente como esses sentimentos muitas vezes surgem de uma sobrecarga social e institucional. Não é fraqueza pessoal, mas uma resposta legítima a pressões reais. Juntos, exploramos essas raízes e desenvolvemos formas de reorganizar sua vida com mais leveza e autonomia.</p>
+                </div>
+                <div class="bg-[#e8dcc8]/20 border-l-4 border-[#c9a961] p-6 rounded-lg my-6">
+                    <h4 class="font-bold text-[#1a3a52] mb-2">Na Orientação de Carreira</h4>
+                    <p class="text-sm">Minha formação e pesquisa na USP me permitem trazer um olhar diferenciado e fundamentado para as questões de Orientação Profissional. Trabalho com jovens em momentos cruciais de escolha de curso, universitários enfrentando adaptação acadêmica e adultos em transições profissionais. O foco é compreender suas dificuldades, diminuir a angústia diante das decisões e construir juntos um planejamento que faça sentido com sua realidade, seus valores e suas aspirações.</p>
+                </div>
+                <p class="text-lg font-bold text-[#1a3a52] pt-4">Minha Filosofia de Trabalho</p>
+                <p>
+                    Acredito em uma escuta empática e livre de julgamentos. Meu objetivo é que, ao final de cada encontro, você se sinta mais fortalecido e preparado para lidar com as pressões externas, sabendo que pode contar com esse espaço sempre que precisar. Seja para cuidar da sua saúde mental ou para desenhar seus próximos passos profissionais, construiremos esse caminho juntos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Notice -->
+    <section class="bg-red-50 border-t-4 border-red-500 py-8">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h3 class="font-bold text-red-900 text-lg mb-2">Em Caso de Emergência</h3>
+            <p class="text-sm text-red-800 mb-3">
+                Se você está sentindo vontade de se machucar ou se sente sem saída neste momento, você não está sozinho. Procure ajuda profissional agora - existem pessoas treinadas para caminhar com você nessa crise:
+            </p>
+            <div class="text-sm text-red-900 space-y-2 flex flex-wrap gap-6">
+                <p><strong>CVV:</strong> Ligue <a href="tel:188" class="font-bold underline text-red-700">188</a></p>
+                <p><strong>SAMU:</strong> Ligue <a href="tel:192" class="font-bold underline text-red-700">192</a></p>
+                <p><strong>Polícia:</strong> Ligue <a href="tel:190" class="font-bold underline text-red-700">190</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-[#f5f1e8]">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-[#1a3a52] text-center mb-4">Perguntas Frequentes</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mx-auto mb-12"></div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">O atendimento é online?</span>
+                        <span id="seta-1" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-1" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">Sim, todos os atendimentos são realizados de forma online através de videoconferência segura. Você pode participar de qualquer lugar, desde que tenha privacidade e uma boa conexão com a internet.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">Quanto tempo dura uma sessão?</span>
+                        <span id="seta-2" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-2" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">Cada sessão tem duração de 50 minutes. Este tempo é dedicado exclusivamente a você, permitindo uma conversa profunda e focada.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">O que acontece na primeira sessão?</span>
+                        <span id="seta-3" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-3" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">Na primeira sessão, nos conhecemos melhor. Você compartilha o que o trouxe até aqui e eu escuto com atenção, sem julgamentos. Juntos, avaliamos se há sintonia e como podemos trabalhar em parceria. Também explico como funciona nosso trabalho e esclarecemos dúvidas. Esta sessão é uma oportunidade para você avaliar se se sente confortável comigo.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">Com que frequência devo fazer sessões?</span>
+                        <span id="seta-4" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-4" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">A frequência depende de suas necessidades e objetivos. Geralmente, começamos com uma sessão semanal, mas isso pode variar. Discutiremos juntos qual é o melhor ritmo para você.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(5)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">Qual é o valor das sessões?</span>
+                        <span id="seta-5" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-5" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">Vamos conversar sobre isso na primeira sessão, encontrando uma opção que funcione para você. Acredito que o investimento em saúde mental deve ser acessível e sustentável.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white border border-[#e8dcc8] rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(6)" class="w-full px-6 py-4 flex items-center justify-between hover:bg-[#e8dcc8]/10 text-left">
+                        <span class="font-bold text-[#1a3a52]">Meus dados estão seguros?</span>
+                        <span id="seta-6" class="text-[#c9a961] font-bold transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="faq-6" class="hidden px-6 py-4 bg-[#f9f7f3] border-t border-[#e8dcc8]">
+                        <p class="text-sm text-[#1a3a52]/80 leading-relaxed">Sim. Todos os seus dados são protegidos conforme a Lei Geral de Proteção de Dados (LGPD). Mantemos sigilo profissional absoluto sobre tudo que é compartilhado em sessão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-[#1a3a52] text-white text-center">
+        <div class="container mx-auto px-4 max-w-2xl space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold">Pronto para começar essa jornada juntos?</h2>
+            <p class="text-lg opacity-90">Agende sua primeira sessão hoje. Vamos conversar sobre seus desafios e explorar juntos as possibilidades de mudança.</p>
+            <div class="pt-4">
+                <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#c9a961] text-[#1a3a52] font-bold px-8 py-4 rounded-lg shadow-md hover:bg-[#c9a961]/90 transition-all">
+                    Agendar Agora via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-[#f9f7f3] border-b border-[#e8dcc8]">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-3xl font-bold text-[#1a3a52] mb-4">Entre em Contato</h2>
+            <div class="w-16 h-0.5 bg-[#c9a961] mx-auto mb-8"></div>
+            <div class="bg-white rounded-xl p-6 border border-[#e8dcc8] inline-block px-12">
+                <h4 class="font-bold text-[#1a3a52] mb-1">WhatsApp</h4>
+                <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="text-[#c9a961] font-bold hover:text-[#1a3a52] transition-colors text-lg">
+                    (19) 97170-8373
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a3a52] text-white/80 py-10 text-center text-xs space-y-2">
+        <p class="text-sm">© 2026 Wagner Paz. Todos os direitos reservados.</p>
+        <p>Atendimento psicológico online | Psicoterapia Colaborativa | Orientação de Carreira</p>
+        <p>Conselho Regional de Psicologia - CRP 06-233592</p>
+        <p class="font-bold text-white">Wagner Paz - Psicólogo Clínico</p>
+    </footer>
+
+    <!-- Script JavaScript para fazer as perguntas abrirem e fecharem -->
+    <script>
+        function toggleFaq(id) {
+            var faq = document.getElementById('faq-' + id);
+            var seta = document.getElementById('seta-' + id);
+            if (faq.classList.contains('hidden')) {
+                faq.classList.remove('hidden');
+                seta.style.transform = 'rotate(180deg)';
+            } else {
+                faq.classList.add('hidden');
+                seta.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
